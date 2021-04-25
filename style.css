@@ -116,3 +116,16 @@ select,
 .tippy-content {
   color: violet;
 }
+
+@media screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .inputArea {
+    flex-direction: column;
+  }
+  #output {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
