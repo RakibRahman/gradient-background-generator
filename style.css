@@ -13,10 +13,11 @@
 body {
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   background-size: 100% 100%;
+  display: grid;
+  place-content: center;
   height: 100vh;
 }
 .container {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +50,12 @@ button {
 button:hover {
   background: #3cb0fd;
   text-decoration: none;
+}
+#btn2 {
+  background: #f14e0d;
+}
+#btn2:hover {
+  opacity: 0.9;
 }
 input {
   width: 80px;
