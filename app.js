@@ -34,7 +34,7 @@ const arrays = [
 btn2.addEventListener("click", () => {
   arrays.sort((a, b) => 0.5 - Math.random());
   arrays.forEach((item) => {
-    output.innerText = `${item};`;
+    output.innerText = `background:${item};`;
     document.body.style.background = item;
   });
 });
