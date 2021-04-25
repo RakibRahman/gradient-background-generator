@@ -4,30 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gradient Generator</title>
+    <title>Gradient Background Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <label for="color1">
-        <input type="color" name="color1" id="color1" value="#f14e0d" />
-      </label>
-      <label for="color2">
-        <input type="color" name="color2" id="color2" value="#00ac0d" />
-      </label>
-      <select name="direction" id="direction">
-        <option value="to right">To Right</option>
-        <option value="to left">To Left</option>
-        <option value="to top">To Top</option>
-        <option value="to bottom">To Bottom</option>
-        <option value="45deg">45 Degrees</option>
-        <option value="90deg">90 Degrees</option>
-        <option value="180deg">180 Degrees</option>
-        <option value="360deg">360 Degrees</option>
-      </select>
-      <button id="btn1">Generate</button>
+    <div class="container">
+      <h1>Gradient Background Generator</h1>
+      <div class="inputArea">
+        <label for="color1">
+          <input type="color" name="color1" id="color1" value="#f14e0d" />
+        </label>
+        <label for="color2">
+          <input type="color" name="color2" id="color2" value="#66a6ff" />
+        </label>
+        <div class="select">
+          <select name="direction" id="direction">
+            <option value="to right">To Right</option>
+            <option value="to left">To Left</option>
+            <option value="to top">To Top</option>
+            <option value="to bottom">To Bottom</option>
+            <option value="45deg">45 Degrees</option>
+            <option value="90deg">90 Degrees</option>
+            <option value="180deg">180 Degrees</option>
+            <option value="360deg">360 Degrees</option>
+          </select>
+        </div>
+        <button id="btn1">Generate</button>
+      </div>
+
+      <p id="output"></p>
     </div>
-    <div id="output"></div>
+
     <script src="app.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>

@@ -5,7 +5,7 @@ const colorDirection = document.querySelector("#direction");
 const output = document.querySelector("#output");
 
 const linearGradient = () => {
-  const dirValue = colorDirection.options[colorDirection.selectedIndex].value;
+  const dirValue = colorDirection.options[colorDirection.selectedIndex].value; //get value from select
   document.body.style.background = `linear-gradient(${dirValue}, ${color1.value}, ${color2.value}`;
   output.textContent = `background: linear-gradient(${dirValue}, ${color1.value}, ${color2.value});`;
 };
